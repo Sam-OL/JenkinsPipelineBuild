@@ -12,7 +12,7 @@ pipeline {
       steps{
         echo 'application built...'
         echo 'testing the application...'
-        withMaven() {
+        maven() {
           sh 'mvn -v'
         }
       }
